@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Correct Material Web CDN -->
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="popup-container">
+    <h1 class="popup-title">Upload Resume</h1>
+    <div class="file-upload-container">
+      <input type="file" id="resumeUpload" class="file-input" />
+      <button id="saveButton" class="btn-save">Save</button>
+    </div>
+    <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+      <span>Uploading...</span>
+    </div>
+    <p id="statusMessage" class="status-message"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
